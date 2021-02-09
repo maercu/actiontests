@@ -25,4 +25,4 @@ jobs:
         run: python test1.py
 
       - name: commit files back to repo
-      uses: actions-x/commit@v2
+        uses: actions-x/commit@v2
