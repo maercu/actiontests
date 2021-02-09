@@ -3,7 +3,7 @@ import os
 
 def main():
     for file in glob('test1/*'):
-        print(os.path.dirname)
+        print(os.path.dirname(file))
         '''
         with open(file, 'r') as fo:
             print('-----------------')
