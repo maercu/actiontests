@@ -1,17 +1,12 @@
 from glob import glob
-import os
+
 
 def main():
     for file in glob('test1/*'):
-        print(os.path.dirname(file))
-        '''
-        with open(file, 'r') as fo:
-            print('-----------------')
-            print(file)
-            print('-----------------')
-            print(fo.read())
-            print('\n')
-        '''
+        with open(file, 'r') as fo_in:
+            with open(f'{file}_result', 'w') as fo_out:
+                fo_out.write(fo_in.read())
+
 
 if __name__ == '__main__':
     main()
